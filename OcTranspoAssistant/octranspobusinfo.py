@@ -14,4 +14,4 @@ data = {
 response = requests.post('https://api.octranspo1.com/v1.2/GetNextTripsForStop', data=data)
 responseData = response.json()
 getInfo = responseData['GetNextTripsForStopResult']
-print
+print(responseData)
