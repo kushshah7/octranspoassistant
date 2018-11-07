@@ -14,4 +14,12 @@ data = {
 response = requests.post('https://api.octranspo1.com/v1.2/GetNextTripsForStop', data=data)
 responseData = response.json()
 for each in responseData['GetNextTripsForStopResult']['Route']['RouteDirection']['Trips']['Trip']:
-    print(each['TripStartTime'])
+    int3 = each['TripStartTime']
+    print(int3)
+    int2 = each['AdjustedScheduleTime']
+    float2 = float(int2)
+    print(float2)
+    int1 = each['AdjustmentAge']
+    float1 = float(int1)
+    if float1 > 0:
+        print(float1)
