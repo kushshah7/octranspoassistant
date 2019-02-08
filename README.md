@@ -1,2 +1,2 @@
 # octranspoassistant
-Err: 0
+Intial commit: Bus number and corresponding scheduled times
